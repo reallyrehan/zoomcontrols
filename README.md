@@ -1,4 +1,4 @@
-# <img src = "src/icon.svg" style="width:20px;height:20px;margin-right:15px;">Zoom Controls 
+# <img src = "src/icon.svg" style="width:20px;height:20px;margin-right:20px;">&nbsp;&nbsp;Zoom Controls 
 
 The Zoom recorded video player lacks any keyboard shortcuts to control the video. This extension adds those keyboard controls plus offers some additional features like variable playback rates.
 
@@ -18,5 +18,5 @@ The Zoom recorded video player lacks any keyboard shortcuts to control the video
 Zoom Controls is submitted for the Google Chrome Store.
 
 ## To-Do
-- [ ] Add Playback Rate Indicator
+- [x] Add Playback Rate Indicator
 - [ ] Add Playback Rate Icon/Controls

@@ -51,10 +51,15 @@ function checkKey(e) {
 
 }
 
+function updateSpeed(s){
+    document.getElementById('speed_button').innerText = s+'x';
+}
+
 function increaseSpeed(){
     var video = getVideo();
 
     video.playbackRate = video.playbackRate + 0.5;
+    updateSpeed(video.playbackRate);
 
 }
 
@@ -62,7 +67,7 @@ function decreaseSpeed(){
     var video = getVideo();
 
     video.playbackRate = (video.playbackRate - 0.5) < 0 ? 0.5 : (video.playbackRate - 0.5);
-
+    updateSpeed(video.playbackRate);
 }
 
 
@@ -152,9 +157,14 @@ global_video.onplay = (event) => {
 
         // console.log(contrl_div);
 
+        let speed_div = document.createElement("div");
+        speed_div.innerHTML = '<span id = "speed_button" style="margin-right:15px;">1x</span>';
+
         if (contrl_div){
             contrl_div.prepend(forward_div);
             contrl_div.prepend(rewind_div);
+            contrl_div.prepend(speed_div);
+
         }
         first_time = false;
 
@@ -174,6 +184,12 @@ global_video.onplay = (event) => {
 
             video.currentTime = video.currentTime - skip_time;
          });
+
+
+
+
+
+
         
 
     }
