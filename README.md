@@ -23,7 +23,7 @@ The Zoom recorded video player lacks any keyboard shortcuts to control the video
 <br>
 
 ## Download
-Zoom Controls is submitted for the Google Chrome Store.
+Zoom Controls is submitted for review for Google Chrome Store.
 
 ## To-Do
 - [x] Add Playback Rate Indicator
