@@ -3,6 +3,11 @@
 The Zoom recorded video player lacks any keyboard shortcuts to control the video. This extension adds those keyboard controls plus offers some additional features like variable playback rates.
 
 ## Features
+### Controls
+- Rewind, Forward, Playback Indicator
+<img src = "src/images/controls.png">
+
+### Keyboard Shortcuts
 - Volume Up - **Arrow &#8593;**
 - Volume Down - **Arrow &#8595;**
 - Rewind - **Arrow &#8592;**
@@ -13,6 +18,9 @@ The Zoom recorded video player lacks any keyboard shortcuts to control the video
 - Video Speed Increase (Playback) - **>**
 - Video Speed Decrease (Playback) - **<**
 
+<img src = "src/images/shortcuts.png" style="height:500px;">
+
+<br>
 
 ## Download
 Zoom Controls is submitted for the Google Chrome Store.
