@@ -39,8 +39,34 @@ function checkKey(e) {
         toggleMute();
        // right arrow
     }
+    else if (e.keyCode == '188') {
+        decreaseSpeed();
+       // right arrow
+    }
+    else if (e.keyCode == '190') {
+        increaseSpeed();
+       // right arrow
+    }
+
 
 }
+
+function increaseSpeed(){
+    var video = getVideo();
+
+    video.playbackRate = video.playbackRate + 0.5;
+
+}
+
+function decreaseSpeed(){
+    var video = getVideo();
+
+    video.playbackRate = (video.playbackRate - 0.5) < 0 ? 0.5 : (video.playbackRate - 0.5);
+
+}
+
+
+
 
 function toggleFullscreen(){
     var full_screen_button = document.getElementsByClassName("vjs-fullscreen-toggle-control-button vjs-control")[0];
