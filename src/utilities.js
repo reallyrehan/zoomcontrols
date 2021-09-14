@@ -66,7 +66,7 @@ function increaseSpeed(){
 function decreaseSpeed(){
     var video = getVideo();
 
-    video.playbackRate = (video.playbackRate - 0.5) < 0 ? 0.5 : (video.playbackRate - 0.5);
+    video.playbackRate = (video.playbackRate - 0.5) < 0 ? 0 : (video.playbackRate - 0.5);
     updateSpeed(video.playbackRate);
 }
 
@@ -160,33 +160,50 @@ global_video.onplay = (event) => {
         let speed_div = document.createElement("div");
         speed_div.innerHTML = '<span id = "speed_button" style="margin-right:15px;">1x</span>';
 
+        let picture_div = document.createElement("div");
+        picture_div.innerHTML = '<button style="cursor:pointer;margin-top:2px;" id ="pictureButton"> <svg width="28" height="18" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" overflow="hidden"><defs><clipPath id="clip0"><rect x="2511" y="1159" width="28" height="18"/></clipPath></defs><g clip-path="url(#clip0)" transform="translate(-2511 -1159)"><path d="M2512.5 1163.17C2512.5 1161.69 2513.69 1160.5 2515.17 1160.5L2532.83 1160.5C2534.31 1160.5 2535.5 1161.69 2535.5 1163.17L2535.5 1173.83C2535.5 1175.31 2534.31 1176.5 2532.83 1176.5L2515.17 1176.5C2513.69 1176.5 2512.5 1175.31 2512.5 1173.83Z" stroke="#FFFFFF" stroke-width="1.14583" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="8" stroke-opacity="1" fill="none" fill-rule="evenodd"/><path d="M2516 1164.17C2516 1163.52 2516.52 1163 2517.17 1163L2523.83 1163C2524.48 1163 2525 1163.52 2525 1164.17L2525 1168.83C2525 1169.48 2524.48 1170 2523.83 1170L2517.17 1170C2516.52 1170 2516 1169.48 2516 1168.83Z" fill="#FFFFFF" fill-rule="evenodd" fill-opacity="1"/></g></svg></button>';
+
+
         if (contrl_div){
+
+            first_time = false;
+            
             contrl_div.prepend(forward_div);
             contrl_div.prepend(rewind_div);
             contrl_div.prepend(speed_div);
+            contrl_div.append(picture_div);
+
+            
+
+            const btn1 = document.querySelector('#forwardButton');
+            
+            btn1.addEventListener('click', function(event){
+                // console.log('Button Clicked');
+                var video = getVideo();
+    
+                video.currentTime = video.currentTime + skip_time;
+             });
+    
+             const btn2 = document.querySelector('#rewindButton');
+    
+             btn2.addEventListener('click', function(event){
+                // console.log('Button Clicked');
+                var video = getVideo();
+    
+                video.currentTime = video.currentTime - skip_time;
+             });
+    
+             const btn3 = document.querySelector('#pictureButton');
+    
+             btn3.addEventListener('click', function(event){
+                // console.log('Button Clicked');
+                var video = getVideo();
+    
+                video.requestPictureInPicture();
+             });
 
         }
-        first_time = false;
-
-        const btn1 = document.querySelector('#forwardButton');
-        btn1.addEventListener('click', function(event){
-            // console.log('Button Clicked');
-            var video = getVideo();
-
-            video.currentTime = video.currentTime + skip_time;
-         });
-
-         const btn2 = document.querySelector('#rewindButton');
-
-         btn2.addEventListener('click', function(event){
-            // console.log('Button Clicked');
-            var video = getVideo();
-
-            video.currentTime = video.currentTime - skip_time;
-         });
-
-
-
+ 
 
 
 
