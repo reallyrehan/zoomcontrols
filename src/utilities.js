@@ -74,8 +74,14 @@ function decreaseSpeed(){
 
 
 function toggleFullscreen(){
-    var full_screen_button = document.getElementsByClassName("vjs-fullscreen-toggle-control-button vjs-control")[0];
-    full_screen_button.click();
+    // var full_screen_button = document.getElementsByClassName("vjs-fullscreen-toggle-control-button vjs-control")[0];
+    // console.log("new full screen")
+    var video = getVideo();
+    if (document.fullscreenElement) {
+        document.exitFullscreen();
+      } else {
+        video.requestFullscreen();
+      }
 
 }
 
@@ -167,7 +173,7 @@ global_video.onplay = (event) => {
         if (contrl_div){
 
             first_time = false;
-            
+
             contrl_div.prepend(forward_div);
             contrl_div.prepend(rewind_div);
             contrl_div.prepend(speed_div);
