@@ -52,7 +52,10 @@ function checkKey(e) {
 }
 
 function updateSpeed(s){
-    document.getElementById('speed_button').innerText = s+'x';
+    speed_html = document.getElementById('speed_button');
+    if (speed_html){
+        document.getElementById('speed_button').innerText = s+'x';
+    }
 }
 
 function increaseSpeed(){
