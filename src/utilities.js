@@ -77,14 +77,34 @@ function decreaseSpeed(){
 
 
 function toggleFullscreen(){
-    // var full_screen_button = document.getElementsByClassName("vjs-fullscreen-toggle-control-button vjs-control")[0];
+    var full_screen_button = document.querySelector(".vjs-fullscreen-toggle-control-button");
+
+    if (!full_screen_button){
+        var full_screen_button = document.querySelector(".vjs-fullscreen-control");
+
+    }
+
+    if (!full_screen_button){
+        
+        var video = getVideo();
+        if (document.fullscreenElement) {
+            document.exitFullscreen();
+          } else {
+            video.requestFullscreen();
+          }
+    }
+    full_screen_button.click();
+
+
+
+
     // console.log("new full screen")
-    var video = getVideo();
-    if (document.fullscreenElement) {
-        document.exitFullscreen();
-      } else {
-        video.requestFullscreen();
-      }
+    // var video = getVideo();
+    // if (document.fullscreenElement) {
+    //     document.exitFullscreen();
+    //   } else {
+    //     video.requestFullscreen();
+    //   }
 
 }
 

@@ -3,7 +3,7 @@
 
   "name": "Zoom Controls",
   "description": "This extension adds skip/rewind video controls to the Zoom Recorded Video player.",
-  "version": "0.2.1",
+  "version": "0.3",
   "icons": {"128": "icon.png" },
   "browser_action": {
     "default_icon": "images/icon.png",
