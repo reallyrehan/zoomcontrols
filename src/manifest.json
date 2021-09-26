@@ -2,7 +2,7 @@
   "manifest_version": 2,
 
   "name": "Zoom Controls",
-  "description": "This extension adds skip/rewind, playback, picture-in-picture video controls and keyboard shortcuts to the Zoom Recorded Video player.",
+  "description": "This extension adds skip/rewind, playback, picture-in-picture video controls & keyboard shortcuts to the Zoom Recorded Video player.",
   "version": "1.0",
   "icons": {"128": "icon.png" },
   "browser_action": {
