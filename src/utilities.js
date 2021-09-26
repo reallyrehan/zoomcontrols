@@ -47,7 +47,40 @@ function checkKey(e) {
         increaseSpeed();
        // right arrow
     }
+    else if (e.keyCode == '67') {
+        toggleSubtitle();
+       // right arrow
+    }
+    else if (e.keyCode == '80') {
+        togglePictureInPicture();
+       // right arrow
+    }
 
+
+}
+
+function togglePictureInPicture(){
+
+    if (document.pictureInPictureElement){
+        document.exitPictureInPicture();
+    }
+    else{
+        var video = getVideo();
+        video.requestPictureInPicture();
+    }
+
+
+}
+
+
+
+function toggleSubtitle(){
+    var cc_button = document.querySelector(".vjs-captions-control-button");
+
+    if (cc_button){
+        cc_button.click();
+
+    }
 
 }
 
@@ -226,9 +259,10 @@ global_video.onplay = (event) => {
     
              btn3.addEventListener('click', function(event){
                 // console.log('Button Clicked');
-                var video = getVideo();
+                // var video = getVideo();
     
-                video.requestPictureInPicture();
+                // video.requestPictureInPicture();
+                togglePictureInPicture();
              });
 
         }
