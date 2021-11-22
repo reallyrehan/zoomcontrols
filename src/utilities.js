@@ -19,18 +19,20 @@ function checkKey(e) {
         decreaseVolume();
     }
 
-    else if (e.keyCode == '37') {
-        rewindVideo()
-       // left arrow
-    }
-    else if (e.keyCode == '39') {
-        forwardVideo();
-       // right arrow
-    }
-    else if (e.keyCode == '32') {
-        toggleVideo();
-       // right arrow
-    }
+    // else if (e.keyCode == '37') {
+    //     rewindVideo()
+    //    // left arrow
+    // }
+    // else if (e.keyCode == '39') {
+    //     forwardVideo();
+    //    // right arrow
+    // }
+    // else if (e.keyCode == '32') {
+    //     console.log('space bar')
+
+    //     toggleVideo();
+    //    // right arrow
+    // }
     else if (e.keyCode == '70') {
         toggleFullscreen();
        // right arrow
@@ -143,11 +145,14 @@ function toggleFullscreen(){
 
 function toggleVideo(){
     var video = getVideo();
+    console.log(video.paused)
 
     if (video.paused) {
+        console.log('playing')
         video.play();
     }
     else{
+        console.log('pausing')
         video.pause();
     }
 
