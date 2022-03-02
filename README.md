@@ -1,4 +1,4 @@
-# <img src = "src/icon.svg" style="width:20px;height:20px;margin-right:20px;">&nbsp;&nbsp;Video Controls for Zoom
+# <img src = "src/icon.svg" style="width:20px;height:20px;margin-right:20px;">&nbsp;&nbsp;Video Controls
 [![Chrome Store version](https://img.shields.io/chrome-web-store/v/henmmblkopelpkajjhhndaicecnccgff.svg)](https://chrome.google.com/webstore/detail/zoom-controls/henmmblkopelpkajjhhndaicecnccgff)
 [![Chrome Store version](https://img.shields.io/chrome-web-store/users/henmmblkopelpkajjhhndaicecnccgff.svg)](https://chrome.google.com/webstore/detail/zoom-controls/henmmblkopelpkajjhhndaicecnccgff)
 [![Chrome Store version](https://img.shields.io/chrome-web-store/stars/henmmblkopelpkajjhhndaicecnccgff.svg)](https://chrome.google.com/webstore/detail/zoom-controls/henmmblkopelpkajjhhndaicecnccgff)
