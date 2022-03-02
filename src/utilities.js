@@ -1,4 +1,4 @@
-console.log("Zoom Controls Activated");
+console.log("Video Controls Activated");
 
 const global_video = document.querySelector('video');
 var first_time = true;

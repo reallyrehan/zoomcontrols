@@ -1,4 +1,4 @@
-# <img src = "src/icon.svg" style="width:20px;height:20px;margin-right:20px;">&nbsp;&nbsp;Zoom Controls 
+# <img src = "src/icon.svg" style="width:20px;height:20px;margin-right:20px;">&nbsp;&nbsp;Video Controls for Zoom
 [![Chrome Store version](https://img.shields.io/chrome-web-store/v/henmmblkopelpkajjhhndaicecnccgff.svg)](https://chrome.google.com/webstore/detail/zoom-controls/henmmblkopelpkajjhhndaicecnccgff)
 [![Chrome Store version](https://img.shields.io/chrome-web-store/users/henmmblkopelpkajjhhndaicecnccgff.svg)](https://chrome.google.com/webstore/detail/zoom-controls/henmmblkopelpkajjhhndaicecnccgff)
 [![Chrome Store version](https://img.shields.io/chrome-web-store/stars/henmmblkopelpkajjhhndaicecnccgff.svg)](https://chrome.google.com/webstore/detail/zoom-controls/henmmblkopelpkajjhhndaicecnccgff)
@@ -31,9 +31,12 @@ The Zoom recorded video player lacks any keyboard shortcuts to control the video
 <br>
 
 ## Download
-Zoom Controls is now available to download from the [Google Chrome Store](https://chrome.google.com/webstore/detail/zoom-controls/henmmblkopelpkajjhhndaicecnccgff).
+Video Controls for Zoom is now available to download from the [Google Chrome Store](https://chrome.google.com/webstore/detail/zoom-controls/henmmblkopelpkajjhhndaicecnccgff).
 
 ## To-Do
 - [x] Add Playback Rate Indicator
 - [ ] Add Playback Rate Icon/Controls
 - [x] Add Picture-in-Picture Mode
+
+## Notice
+This is a free extension, designed to improve the user experience. No copyright infringement intended.
